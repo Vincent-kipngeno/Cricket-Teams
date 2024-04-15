@@ -1,0 +1,53 @@
+<section style="padding-top: 50px; background-color: #eee;">
+    <div class="container py-5">
+        <ng-container *ngIf="no_teams">
+            <p>Teams aren't available yet.</p>
+        </ng-container>
+        <ng-container *ngIf="!no_teams">
+            <div class="row justify-content-center mb-3">
+                <div class="m-1 col-md-12 col-xl-10" *ngFor="let team of teams">
+                    <div class="card shadow border rounded-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                        <img [src]="team.icon" width="200px" height="200px" />
+                                        <a href="#!">
+                                            <div class="hover-overlay">
+                                                <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>{{ team.name }}</h5>
+                                </div>
+                                <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start border-start">
+                                    <h6 class="text-success">{{ team.players.length }} players!</h6>
+                                    <a [routerLink]="['/teams/', team.name]">
+                                        <div class="d-flex flex-column mt-4">
+                                            <button class="btn btn-primary btn-sm" type="button">View</button>
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="d-flex flex-column mt-4">
+                                            <button class="btn btn-outline-primary btn-sm"
+                                                [routerLink]="['/add-team', team?.name]" type="button">Edit</button>
+                                        </div>
+                                    </a>
+                                    <a>
+                                        <div class="d-flex flex-column mt-4">
+                                            <button class="btn btn-outline-danger btn-sm" (click)="delete(team.id)"
+                                                type="button">Delete</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</section>

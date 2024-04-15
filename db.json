@@ -1,0 +1,171 @@
+{
+  "teams": [
+    {
+      "name": "Mumbai Indian E",
+      "icon": "https://images.unsplash.com/photo-1652602143412-4ae263afdbf7?q=80&w=2095&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "players": [
+        {
+          "fullName": "Rohit Sharma",
+          "photo": "https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTF8cmdjb1RvQkk4Vm98fGVufDB8fHx8fA%3D%3D",
+          "team": "Mumbai Indians",
+          "price": "15 crores",
+          "playingStatus": "Playing",
+          "role": "Batsman"
+        },
+        {
+          "fullName": "Hardik Pandya",
+          "photo": "https://images.unsplash.com/photo-1565787112834-71c0e4bc0d35?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTd8cmdjb1RvQkk4Vm98fGVufDB8fHx8fA%3D%3D",
+          "team": "Mumbai Indians",
+          "price": "11 crores",
+          "playingStatus": "Playing",
+          "role": "All-rounder"
+        },
+        {
+          "fullName": "Ishan Kishan",
+          "photo": "https://images.unsplash.com/photo-1593766818891-892421791902?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnxfSXcxS1J1Yks2WXx8ZW58MHx8fHx8",
+          "team": "Mumbai Indians",
+          "price": "6 crores",
+          "playingStatus": "Playing",
+          "role": "Batsman"
+        },
+        {
+          "fullName": "Jasprit Bumrah",
+          "photo": "https://e0.365dm.com/21/09/2048x1152/skysports-michael-carberry_5501556.jpg?20210905141240",
+          "team": "Mumbai Indian3",
+          "price": "12 crores",
+          "playingStatus": "Playing",
+          "role": "Bowler"
+        },
+        {
+          "fullName": "Kieron Pollard Edited",
+          "photo": "https://images.unsplash.com/photo-1582217217724-c675a2f82188?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTl8cmdjb1RvQkk4Vm98fGVufDB8fHx8fA%3D%3D",
+          "team": "Mumbai Indian3",
+          "price": "8 crores",
+          "playingStatus": "Playing",
+          "role": "All-rounder"
+        },
+        {
+          "fullName": "Vincent Kipngeno",
+          "photo": "https://e0.365dm.com/21/09/2048x1152/skysports-michael-carberry_5501556.jpg?20210905141240",
+          "team": "Mumbai Indian E",
+          "price": "25 crores",
+          "playingStatus": "Not Playing",
+          "role": "Bowler"
+        }
+      ],
+      "id": "acbb"
+    },
+    {
+      "name": "Chennai Super Kings",
+      "icon": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "players": [
+        {
+          "fullName": "MS Dhoni",
+          "photo": "https://images.unsplash.com/photo-1624193822910-a73257ce9e44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHxfSXcxS1J1Yks2WXx8ZW58MHx8fHx8",
+          "team": "Chennai Super Kings",
+          "price": "12 crores",
+          "playingStatus": "Playing",
+          "role": "Batsman"
+        },
+        {
+          "fullName": "Suresh Raina",
+          "photo": "https://images.unsplash.com/photo-1542186910-5d9601d12a2d?dpr=1&h=294&w=294&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MzgxNDkyNnx8ZW58MHx8fHx8",
+          "team": "Chennai Super Kings",
+          "price": "10 crores",
+          "playingStatus": "Playing",
+          "role": "Batsman"
+        },
+        {
+          "fullName": "Ravindra Jadeja",
+          "photo": "https://images.unsplash.com/photo-1593341646782-e0b495cff86d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMTM3MjU5NXx8ZW58MHx8fHx8",
+          "team": "Chennai Super Kings",
+          "price": "9 crores",
+          "playingStatus": "Playing",
+          "role": "All-rounder"
+        },
+        {
+          "fullName": "Deepak Chahar",
+          "photo": "https://images.unsplash.com/photo-1562077772-3bd90403f7f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXwxMTM3MjU5NXx8ZW58MHx8fHx8",
+          "team": "Chennai Super Kings",
+          "price": "6 crores",
+          "playingStatus": "Playing",
+          "role": "Bowler"
+        }
+      ],
+      "id": "20e5"
+    },
+    {
+      "id": "2346",
+      "name": "Cricket 401",
+      "icon": "https://media.gettyimages.com/id/1421356150/photo/india-v-sri-lanka-dp-world-asia-cup.jpg?s=1024x1024&w=gi&k=20&c=SsCo1e7pxjgOJTXABUrZShPa-GkEyOweyOrAu7sj4-o=",
+      "players": [
+        {
+          "fullName": "Vincent Kipngeno",
+          "photo": "https://e0.365dm.com/21/09/2048x1152/skysports-michael-carberry_5501556.jpg?20210905141240",
+          "team": "Cricket 401",
+          "price": "13 crores",
+          "playingStatus": "Not Playing",
+          "role": "Bowler"
+        },
+        {
+          "fullName": "Jasprit Bumrah",
+          "photo": "https://images.unsplash.com/photo-1595210382266-2d0077c1f541?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8cmdjb1RvQkk4Vm98fGVufDB8fHx8fA%3D%3D",
+          "team": "Cricket 401",
+          "price": "24 crores",
+          "playingStatus": "Not Playing",
+          "role": "All-rounder"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "user1",
+      "password": "password1",
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john.doe@example.com",
+      "id": "27d7"
+    },
+    {
+      "username": "user2",
+      "password": "password2",
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "email": "jane.smith@example.com",
+      "id": "e69d"
+    },
+    {
+      "id": "e7a1",
+      "firstname": "Kipngeno",
+      "lastname": "Vincent",
+      "email": "kipngenovi2001@gmail.com",
+      "password": "Taptet#2001",
+      "confirmPassword": "Taptet#2001"
+    },
+    {
+      "id": "b8ee",
+      "firstname": "Vincent",
+      "lastname": "Kipngeno",
+      "email": "johndoe@gmail.com",
+      "password": "Taptet#2001",
+      "confirmPassword": "Taptet#2001"
+    },
+    {
+      "id": "f08f",
+      "firstname": "Vincent",
+      "lastname": "Kipngeno",
+      "email": "trial@gmail.com",
+      "password": "trial2",
+      "confirmPassword": "trial2"
+    },
+    {
+      "id": "ebe1",
+      "firstname": "Vincent",
+      "lastname": "Kipngeno",
+      "email": "vince@gmail.com",
+      "password": "Taptet#2001",
+      "confirmPassword": "Taptet#2001"
+    }
+  ]
+}

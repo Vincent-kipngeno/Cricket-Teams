@@ -1,0 +1,13 @@
+<div class="container mt-5" *ngIf="teamData.length > 0">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let stat of stats">
+            <div class="card m-5 text-center" style="width: 300px; height: 150px;">
+                <div class="card-body mt-4">
+                    <h5 class="card-title font-weight-bold text-primary">{{ stat.title }}</h5>
+                    <p class="card-text" [ngClass]="getCardTextColor(stat.value)"
+                        [ngStyle]="{ 'font-size': '36px', 'font-weight': 'bold' }">{{ stat.value }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

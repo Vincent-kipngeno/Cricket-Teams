@@ -1,0 +1,132 @@
+<section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="row gx-lg-5 align-items-center mb-5">
+            <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                    Welcome to <br />
+                    <span style="color: hsl(218, 81%, 75%)">Cricket Teams</span>
+                </h1>
+                <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+                    Explore our exquisite selection of 2024 IPL cricket teams, showcasing the best talent and thrilling
+                    matches. From powerhouse performances to nail-biting finishes, experience the excitement of IPL
+                    cricket like never before.
+                </p>
+            </div>
+
+            <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <form [formGroup]="formData" (ngSubmit)="signup()">
+
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <!-- First Name -->
+                                    <div class="form-outline">
+                                        <label for="firstname" class="form-label">First Name</label>
+                                        <input type="text" id="firstname" class="form-control border border-dark"
+                                            formControlName="firstname">
+                                        <div *ngIf="formData.get('firstname')?.invalid && formData.get('firstname')?.touched"
+                                            class="text-danger">
+                                            <div *ngIf="formData.get('firstname')?.errors!['required']">First Name is
+                                                required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <!-- Last Name -->
+                                    <div class="form-outline">
+                                        <label for="lastname" class="form-label">Last Name</label>
+                                        <input type="text" id="lastname" class="form-control border border-dark"
+                                            formControlName="lastname">
+                                        <div *ngIf="formData.get('lastname')?.invalid && formData.get('lastname')?.touched"
+                                            class="text-danger">
+                                            <div *ngIf="formData.get('lastname')?.errors!['required']">Last Name is
+                                                required.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-outline mb-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control border border-dark"
+                                    formControlName="email">
+                                <div *ngIf="formData.get('email')?.invalid && formData.get('email')?.touched"
+                                    class="text-danger">
+                                    <div *ngIf="formData.get('email')?.errors!['required']">Email is required.</div>
+                                    <div *ngIf="formData.get('email')?.errors!['email']">Invalid email format.</div>
+                                </div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-outline mb-4">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" id="password" class="form-control border border-dark"
+                                    formControlName="password">
+                                <div *ngIf="formData.get('password')?.invalid && formData.get('password')?.touched"
+                                    class="text-danger">
+                                    <div *ngIf="formData.get('password')?.errors!['required']">Password is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div class="form-outline mb-4">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" id="confirmPassword" class="form-control border border-dark"
+                                    formControlName="confirmPassword">
+                                <div *ngIf="formData.get('confirmPassword')?.invalid && formData.get('confirmPassword')?.touched"
+                                    class="text-danger">
+                                    <div *ngIf="formData.get('confirmPassword')?.errors!['required']">Confirm Password
+                                        is
+                                        required.</div>
+                                    <div *ngIf="formData.get('confirmPassword')?.hasError('passwordMismatch')">Passwords
+                                        do not match.</div>
+                                </div>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+
+                            <!-- Register buttons -->
+                            <div class="text-center">
+                                <p>or sign up with:</p>
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+
+                            <p>Already have an account? <a [routerLink]="['/login']" class="link-primary">Login here</a>
+                            </p>
+                        </form>
+
+                        <!-- End of Registration Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section: Design Block -->

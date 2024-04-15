@@ -1,0 +1,107 @@
+<section class="background-radial-gradient overflow-hidden">
+
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="row gx-lg-5 align-items-center mb-5">
+            <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                    Please <br />
+                    <span *ngIf="!edit" style="color: hsl(218, 81%, 75%)">Add a Player</span>
+                    <span *ngIf="edit" style="color: hsl(218, 81%, 75%)">Edit the Player</span>
+                </h1>
+                <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+                    Explore our exquisite selection of 2024 IPL cricket teams, showcasing the best talent and thrilling
+                    matches. From powerhouse performances to nail-biting finishes, experience the excitement of IPL
+                    cricket like never before.
+                </p>
+            </div>
+
+            <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <!-- Add Team Form -->
+                        <form [formGroup]="formData" (ngSubmit)="addTeam()">
+                            <!-- Full name -->
+                            <div class="form-outline mb-4">
+                                <label for="fulName" class="form-label">Full Name</label>
+                                <input type="name" id="fullName" class="form-control border border-dark"
+                                    formControlName="fullName">
+                                <div *ngIf="formData.get('fullName')?.invalid && formData.get('fullName')?.touched"
+                                    class="text-danger">
+                                    <div *ngIf="formData.get('fullName')?.errors!['required']">Full Name is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Photo -->
+                            <div class="form-outline mb-4">
+                                <label for="photo" class="form-label">Photo URL</label>
+                                <input type="name" id="photo" class="form-control border border-dark"
+                                    formControlName="photo">
+                                <div *ngIf="formData.get('photo')?.invalid && formData.get('photo')?.touched"
+                                    class="text-danger">
+                                    <div *ngIf="formData.get('photo')?.errors!['required']">Photo link is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Team -->
+                            <div class="form-outline mb-4">
+                                <label for="team" class="form-label">Team Name</label>
+                                <select id="team" class="form-control border border-dark" formControlName="team">
+                                    <option *ngFor="let team of teams" [value]="team.id">{{ team.name }}</option>
+                                </select>
+                                <div *ngIf="formData.get('team')?.invalid && formData.get('team')?.touched"
+                                    class="text-danger">
+                                    <div *ngIf="formData.get('team')?.errors!['required']">Team is required.</div>
+                                </div>
+                            </div>
+
+                            <!-- Role -->
+                            <div class="form-outline mb-4">
+                                <label for="role" class="form-label">Role</label>
+                                <input type="text" id="role" class="form-control border border-dark"
+                                    formControlName="role">
+                                <div *ngIf="formData.get('role')?.invalid && formData.get('role')?.touched"
+                                    class="text-danger">
+                                    <div *ngIf="formData.get('role')?.errors!['required']">Role is required.</div>
+                                </div>
+                            </div>
+
+                            <!-- Price -->
+                            <div class="form-outline mb-4">
+                                <label for="price" class="form-label">Price</label>
+                                <input type="number" id="price" class="form-control border border-dark"
+                                    formControlName="price">
+                                <div *ngIf="formData.get('price')?.invalid && formData.get('price')?.touched"
+                                    class="text-danger">
+                                    <div *ngIf="formData.get('price')?.errors!['required']">Price is required.</div>
+                                </div>
+                            </div>
+
+                            <!-- Playing Status -->
+                            <div class="form-outline mb-4">
+                                <label for="playingStatus" class="form-label">Playing Status</label>
+                                <input type="text" id="playingStatus" class="form-control border border-dark"
+                                    formControlName="playingStatus">
+                                <div *ngIf="formData.get('playingStatus')?.invalid && formData.get('playingStatus')?.touched"
+                                    class="text-danger">
+                                    <div *ngIf="formData.get('playingStatus')?.errors!['required']">Playing Status is
+                                        required.</div>
+                                </div>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-success btn-block mb-4">
+                                {{ (!edit)? "Add Player" : "Edit Player"}} </button>
+                        </form>
+                        <!-- End of Form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section: Design Block -->

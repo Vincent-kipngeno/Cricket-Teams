@@ -1,0 +1,12 @@
+<div class="bg-light text-center p-4" style="width: 400px; height: 280px;">
+    <button class="btn btn-success rounded-circle position-absolute top-2 start-50 translate-middle"
+        style="font-size: 20px;" mat-button [mat-dialog-close]="false">
+        <i class="fas fa-times"></i>
+    </button>
+    <h1 class="text-primary mb-4 mt-4 font-weight-bold">Confirm Signout.</h1>
+    <p class="text-dark mb-4">Are you sure you want to logout?</p>
+    <mat-dialog-actions class="d-flex justify-content-center">
+        <button class="btn btn-success m-2" mat-button [mat-dialog-close]="false">Cancel</button>
+        <button class="btn btn-danger m-2" mat-button [mat-dialog-close]="true" cdkFocusInitial>Logout</button>
+    </mat-dialog-actions>
+</div>
